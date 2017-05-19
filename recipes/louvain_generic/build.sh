@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+pwd
+
 make
 
 # tests will only work inside the build dir, but
