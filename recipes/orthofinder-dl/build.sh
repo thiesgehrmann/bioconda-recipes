@@ -1,8 +1,5 @@
 #!/bin/bash
 
-pwd
-ls
-
 mkdir -p $PREFIX/bin
 mkdir -p $PREFIX/opt/orthofinder-dl
 
