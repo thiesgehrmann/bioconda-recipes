@@ -4,7 +4,7 @@ about:
 
 package:
     name: louvain_generic
-    version: 9999
+    version: 0.3.1
 
 build:
     number: 0
@@ -17,8 +17,7 @@ requirements:
     run:
         - libgcc # [not osx]
 source:
-    #git_url: https://github.com/thiesgehrmann/louvain.git
-    url: https://github.com/thiesgehrmann/louvain/archive/master.zip
+    git_url: https://github.com/thiesgehrmann/louvain.git
 
 test:
     commands:
