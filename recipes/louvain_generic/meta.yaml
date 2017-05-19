@@ -1,0 +1,25 @@
+about:
+    home: https://perso.uclouvain.be/vincent.blondel/research/louvain.html
+    summary: Community detection tool
+
+package:
+    name: louvain_generic
+    version: 9999
+
+build:
+    number: 0
+    skip: False  # [not py27]
+    detect_binary_files_with_prefix: True
+
+requirements:
+    build:
+        - gcc # [not osx]
+    run:
+        - libgcc # [not osx]
+source:
+    #git_url: https://github.com/thiesgehrmann/louvain.git
+    url: https://github.com/thiesgehrmann/louvain/archive/master.zip
+
+test:
+    commands:
+        - louvain > /dev/null
