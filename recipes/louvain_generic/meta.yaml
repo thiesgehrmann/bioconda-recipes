@@ -1,6 +1,7 @@
 about:
     home: https://perso.uclouvain.be/vincent.blondel/research/louvain.html
     summary: Community detection tool
+    license: LGPL3
 
 package:
     name: louvain_generic
@@ -14,10 +15,12 @@ build:
 requirements:
     build:
         - gcc # [not osx]
+        - llvm # [osx]
     run:
         - libgcc # [not osx]
 source:
-    git_url: https://github.com/thiesgehrmann/louvain.git
+    url: https://github.com/thiesgehrmann/louvain/archive/0.3.1.tar.gz
+    md5: f8e2f495b189406cfc5c983e1fa5d29e
 
 test:
     commands:
