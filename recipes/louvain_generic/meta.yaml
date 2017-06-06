@@ -24,4 +24,4 @@ source:
 
 test:
     commands:
-        - louvain > /dev/null
+        - louvain &> /dev/null
